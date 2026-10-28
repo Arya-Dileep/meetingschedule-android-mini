@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F3F5FB"
+    android:padding="20dp">
+
+    <!-- Page heading -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="YOUR WORKSPACE"
+        android:textColor="#6366A5"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:letterSpacing="0.12"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Meeting Minutes Book"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="#202750"
+        android:paddingTop="6dp"
+        android:paddingBottom="6dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Keep your discussions, decisions, and action items organized."
+        android:textSize="14sp"
+        android:textColor="#737B93"
+        android:lineSpacingExtra="3dp"
+        android:layout_marginBottom="22dp" />
+
+    <!-- Add meeting button -->
+    <Button
+        android:id="@+id/btnAddMeeting"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:text="+  Add New Meeting"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#3949AB"
+        android:stateListAnimator="@null"
+        android:elevation="3dp"
+        android:layout_marginBottom="22dp" />
+
+    <!-- Meeting list section heading -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="YOUR MEETINGS"
+        android:textColor="#414B78"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:letterSpacing="0.08"
+        android:layout_marginBottom="10dp" />
+
+    <!-- Empty state -->
+    <TextView
+        android:id="@+id/txtEmpty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="No meetings added yet.\n\nTap + Add New Meeting to create your first record."
+        android:textSize="15sp"
+        android:textColor="#737B93"
+        android:gravity="center"
+        android:lineSpacingExtra="4dp"
+        android:padding="28dp"
+        android:visibility="gone" />
+
+    <!-- Saved meetings -->
+    <ListView
+        android:id="@+id/listMeetings"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#FFFFFF"
+        android:padding="8dp"
+        android:clipToPadding="false"
+        android:divider="#E8EAF2"
+        android:dividerHeight="1dp"
+        android:scrollbarStyle="insideOverlay" />
+
+</LinearLayout>
